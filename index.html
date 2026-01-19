@@ -18,7 +18,7 @@
 			<div id="wrapper" class="fade-in">
 
 				<!-- Intro -->
-					<div id="intro">
+				<div id="intro" style="background-color: #9370DB; padding: 20px;">
 						<h1>Welcome to<br />
 						executive clarity powered by analysis.</h1>
 						<p>I’m Vanessa Udugba, a strategic Business Analyst who leads transformation by aligning executives, stakeholders, and data around clear priorities to deliver measurable outcomes and lasting value.</p>
@@ -54,14 +54,21 @@
 
    									 <script>
 									 const today = new Date();
-     								 document.getElementById("today").textContent =
-     								today.toLocaleDateString();
+									 const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+									 const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+									 const dayName = days[today.getDay()];
+									 const date = today.getDate();
+									 const suffix = date % 10 === 1 && date !== 11 ? 'st' : date % 10 === 2 && date !== 12 ? 'nd' : date % 10 === 3 && date !== 13 ? 'rd' : 'th';
+									 const month = months[today.getMonth()];
+									 const year = today.getFullYear();
+     								 document.getElementById("today").innerHTML = dayName + " " + date + suffix + " " + month + ", " + year;
     								</script>
 									
-									<p>Engineering Smarter Business Decisions</p>
+									<h3>Engineering Smarter Business Decisions</h3>
 									
 								</header>
 								<a href="#" class="image main"><img src="images/Vanny at work.png" alt=""></a>
+								<p style="text-align: right; font-size: 1.1em; margin-top: -0.8em; margin-bottom: 0.2em; font-weight: bold; font-family: 'Great Vibes', 'Brush Script MT', cursive;">Vanessa U. Udugba</p>
 								<ul class="actions special">
 									
 								</ul>
@@ -71,9 +78,9 @@
 							<section class="posts">
 								<article>
 									<header>
-										<span class="date">Dec 20, 2025</span>
+										<span class="date">Nov 20, 2025</span>
 										<h2><a href="#">GreenLeaf Stores<br />
-										Mangement Dashboard</a></h2>
+										Mangement Dashboard Overview</a></h2>
 									</header>
 									<a href="#" class="image fit"><img src="images/GreenLeaf homepage.jpg" alt="" /></a>
 									<p>GreenLeafStores is an early-stage online retailer, based in the United States of America, specializing in eco-friendly home products. In just its first year, the startup has seen rapid order growth but still relies on gut instinct and ad-hoc reports rather than a consistent, data-driven approach. <p>
@@ -81,19 +88,29 @@
 									<p> The GreenLeaf Stores Management Dashboard provides a clear view of retail performance, highlighting revenue, profit, orders, and units sold. Built in Excel, it analyzes sales and profitability by product and state, tracks key KPIs, and visualizes trends, top customers, and regions showcasing strong data modeling, pivot tables, and dashboarding skills.</p>
 												
 									<ul class="actions special">
-										<li><a href="https://drive.google.com/file/d/1V8EavpGi4FcF-twNgl6ilBRDe-TktfsA/view?usp=drive_link">Click to see an overview</a> </li>
+										<li><a href="https://drive.google.com/file/d/1V8EavpGi4FcF-twNgl6ilBRDe-TktfsA/view?usp=drive_link" style="border: 2px solid #333; padding: 8px 12px; display: inline-block; font-weight: bold; text-transform: uppercase; font-size: 0.85em; font-family: Arial;">Click to see more</a> </li>
 									</ul>
 								</article>
 								<article>
 									<header>
-										<span class="date">April 22, 2017</span>
-										<h2><a href="#">Primis eget<br />
-										imperdiet lorem</a></h2>
+										<span class="date">Dec 10, 2025</span>
+										<h2><a href="#">NextGen Tools<br />
+										Performance and Strategy Overview</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+									<a href="#" class="image fit"><img src="images/NextGen Tools.png" alt="" /></a>
+									<p><strong>My Role & Impact</strong></p>
+									<p>As the lead Business Analyst on this project, I was responsible for gathering requirements, analyzing data, and designing the dashboard. My work enabled NextGen Tools to gain a clearer understanding of their business performance, identify areas for improvement, and make informed strategic decisions that drive growth and efficiency.</p>
+									<h3>Use of Excel for Dashboard & Insights</h3>
+									<p>I designed the performance dashboard entirely in Excel, using advanced functions and visualization tools to convert raw datasets into executive-ready intelligence. I applied:</p>
+									<ul style="text-align: left;">
+										<li>Data modeling and cleansing with Power Query and formulas to ensure accuracy and consistency.</li>
+										<li>Pivot Tables, dynamic charts, and slicers to enable interactive analysis of revenue, productivity, and customer trends.</li>
+										<li>KPI calculations and scenario analysis to compare actual performance against targets and forecast potential outcomes.</li>
+									</ul>
+									<p>Through this approach, I was able to uncover patterns such as high-value customer segments, underperforming service lines, and process bottlenecks. These insights informed recommendations around resource allocation, pricing strategy, and process improvements, helping NextGen Tools make confident, evidence-based decisions.</p>
+									
 									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
+										<li><a href="https://drive.google.com/file/d/1ecOZVFNsaNLrOw7BH9faEkGvk47Ow8PT/view?usp=drive_link" style="border: 2px solid #333; padding: 8px 12px; display: inline-block; font-weight: bold; text-transform: uppercase; font-size: 0.85em; font-family: Arial;">Click to see more</a></li>
 									</ul>
 								</article>
 								<article>
